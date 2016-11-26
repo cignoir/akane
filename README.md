@@ -13,3 +13,16 @@ services
 └ db2
   └ mysql5.7
 ```
+
+## Dependencies
+* Rails5
+* 
+* rails_admin
+* devise
+
+## How to run
+```
+$ docker-compose run --rm bundle exec rails db:setup
+$ docker-compose up -d
+```
+

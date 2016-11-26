@@ -16,13 +16,11 @@ services
 
 ## Dependencies
 * Rails5
-* 
-* rails_admin
 * devise
+* cancancan
 
 ## How to run
 ```
 $ docker-compose run --rm bundle exec rails db:setup
 $ docker-compose up -d
 ```
-

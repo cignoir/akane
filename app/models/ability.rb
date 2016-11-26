@@ -7,10 +7,8 @@ class Ability
     user ||= User.new # guest user (not logged in)
     if user.has_role?(:admin)
       can :manage, :all
-      can :access, :rails_admin
     else
       can :read, :all
-      can :access, :rails_admin # FIXME: DELETE
     end
 
     #
